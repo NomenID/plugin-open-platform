@@ -1,0 +1,40 @@
+{
+    "name": "Open Platform",
+    "version": "1.0.0",
+    "description": "开发者门户：注册开发者、自助创建和管理 OAuth 应用",
+    "license": "GPL-3.0-only",
+    "author": [
+        "Yunyun"
+    ],
+    "requires": {
+        "Nomen": ">=1.0"
+    },
+    "autoload": {
+        "Nomen\\Plugin\\OpenPlatform\\": "src/"
+    },
+    "boot": [
+        "Nomen\\Plugin\\OpenPlatform\\Plugin",
+        "boot"
+    ],
+    "mounts": {
+        "portal": {
+            "path": "/open",
+            "title": "开放平台",
+            "description": "开发者注册与自助管理应用",
+            "access": "public",
+            "config": "base_path"
+        }
+    },
+    "adminPages": {
+        "developers": {
+            "title": "开发者",
+            "description": "开放平台里注册的开发者，以及他们名下的应用",
+            "handler": [
+                "Nomen\\Plugin\\OpenPlatform\\AdminPage",
+                "render"
+            ],
+            "order": 35
+        }
+    },
+    "homepage": "https://github.com/NomenID/plugin-open-platform"
+}
