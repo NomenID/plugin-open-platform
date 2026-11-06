@@ -33,6 +33,7 @@
                 "Nomen\\Plugin\\OpenPlatform\\AdminPage",
                 "render"
             ],
+            "group": "用户与接入",
             "order": 35
         }
     },
