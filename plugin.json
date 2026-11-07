@@ -1,7 +1,7 @@
 {
     "name": "Open Platform",
     "version": "1.0.0",
-    "description": "开发者门户：注册开发者、自助创建和管理 OAuth 应用",
+    "description": "Developer portal: register developers, self-manage OAuth apps",
     "license": "GPL-3.0-only",
     "author": [
         "Yunyun"
@@ -20,7 +20,7 @@
         "portal": {
             "path": "/open",
             "title": "开放平台",
-            "description": "开发者注册与自助管理应用",
+            "description": "Developer registration and self-managed apps",
             "access": "public",
             "config": "base_path"
         }
@@ -28,7 +28,7 @@
     "adminPages": {
         "developers": {
             "title": "开发者",
-            "description": "开放平台里注册的开发者，以及他们名下的应用",
+            "description": "Developers registered on the open platform, and the apps under their names",
             "handler": [
                 "Nomen\\Plugin\\OpenPlatform\\AdminPage",
                 "render"

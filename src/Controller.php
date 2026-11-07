@@ -54,7 +54,7 @@ class Controller
         $disabledDeveloper = ($developer === null && $userId > 0) ? self::getDeveloperAny($userId) : null;
 
         $this->view('landing', [
-            'title'             => t('开放平台'),
+            'title'             => t('Open Platform'),
             'loggedIn'          => $userId > 0,
             'developer'         => $developer,
             'disabledDeveloper' => $disabledDeveloper,
@@ -71,7 +71,7 @@ class Controller
         $userId = (int)Session::get('user_id');
 
         if (!Csrf::validate($_POST['_csrf'] ?? null)) {
-            Session::flash('error', t('请求无效，请重试'));
+            Session::flash('error', t('Invalid request, try again'));
             Response::redirect(self::base());
         }
 
@@ -80,19 +80,19 @@ class Controller
         }
 
         if (self::getDeveloperAny($userId)) {
-            Session::flash('error', t('开发者账号已被停用，请联系管理员'));
+            Session::flash('error', t('This developer account is disabled. Contact an administrator.'));
             Response::redirect(self::base());
         }
 
         $rate = RateLimiter::check("open_platform_register:{$userId}", 1, 3600);
         if (!$rate['allowed']) {
-            Session::flash('error', t('操作太频繁，请稍后重试'));
+            Session::flash('error', t('Too many actions, try again later'));
             Response::redirect(self::base());
         }
 
         $name = trim((string)($_POST['name'] ?? ''));
         if (mb_strlen($name) < 2 || mb_strlen($name) > 64) {
-            Session::flash('error', t('开发者名称需要 2-64 个字符'));
+            Session::flash('error', t('Developer name needs 2-64 characters'));
             Response::redirect(self::base());
         }
 
@@ -111,7 +111,7 @@ class Controller
             'summary'     => '入驻开放平台，开发者名称：' . $name,
         ]);
 
-        Session::flash('success', t('开发者注册成功！现在可以创建应用了'));
+        Session::flash('success', t('Developer registered! You can create apps now'));
         Response::redirect(self::base() . '/dashboard');
     }
 
@@ -120,7 +120,7 @@ class Controller
         $developer = $this->requireDeveloper();
 
         $this->view('dashboard', [
-            'title'       => t('我的应用'),
+            'title'       => t('My apps'),
             'developer'   => $developer,
             'apps'        => OAuthClients::all((int)$developer['id']),
             'totalUsers'  => OAuthClients::authorizedUserCount((int)$developer['id']),
@@ -136,7 +136,7 @@ class Controller
         $this->requireDeveloper();
 
         $this->view('app-form', [
-            'title'           => t('创建应用'),
+            'title'           => t('Create app'),
             'app'             => null,
             'appScopes'       => ['openid'],
             'redirectUris'    => [],
@@ -151,19 +151,19 @@ class Controller
         $developer = $this->requireDeveloper();
 
         if (!Csrf::validate($_POST['_csrf'] ?? null)) {
-            Session::flash('error', t('请求无效，请重试'));
+            Session::flash('error', t('Invalid request, try again'));
             Response::redirect(self::base() . '/apps/create');
         }
 
         $count = count(OAuthClients::all((int)$developer['id']));
         if ($count >= self::MAX_APPS) {
-            Session::flash('error', t('每个开发者最多创建 10 个应用'));
+            Session::flash('error', t('Each developer can create up to 10 apps'));
             Response::redirect(self::base() . '/apps/create');
         }
 
         $rate = RateLimiter::check("open_platform_create:{$developer['id']}", 1, 60);
         if (!$rate['allowed']) {
-            Session::flash('error', t('操作太频繁，请稍后重试'));
+            Session::flash('error', t('Too many actions, try again later'));
             Response::redirect(self::base() . '/apps/create');
         }
 
@@ -171,7 +171,7 @@ class Controller
         if (!empty($_FILES['icon']['name'])) {
             $icon = IconUpload::store($_FILES['icon']);
             if ($icon === null) {
-                Session::flash('error', t('图标上传失败，请检查文件格式和大小'));
+                Session::flash('error', t('Icon upload failed — check the file format and size'));
                 Response::redirect(self::base() . '/apps/create');
             }
         }
@@ -199,7 +199,7 @@ class Controller
 
         Session::flash('new_client_id', $created['client_id']);
         Session::flash('new_client_secret', $created['client_secret']);
-        Session::flash('success', t('应用创建成功'));
+        Session::flash('success', t('App created'));
 
         Response::redirect(self::base() . '/apps/' . $created['client_id']);
     }
@@ -210,7 +210,7 @@ class Controller
         $app = OAuthClients::findForDeveloper($clientId, (int)$developer['id']);
 
         if (!$app) {
-            Response::error(404, t('应用不存在或无权访问'));
+            Response::error(404, t('App not found or no access'));
             return;
         }
 
@@ -220,7 +220,7 @@ class Controller
         $pkce = $isPublic || (int)($app['pkce_required'] ?? 0) === 1;
 
         $this->view('app-show', [
-            'title'            => t('应用详情'),
+            'title'            => t('App details'),
             'developer'        => $developer,
             'app'              => $app,
             'redirectUris'     => array_values($redirectUris),
@@ -245,12 +245,12 @@ class Controller
         $app = OAuthClients::findForDeveloper($clientId, (int)$developer['id']);
 
         if (!$app) {
-            Response::error(404, t('应用不存在或无权访问'));
+            Response::error(404, t('App not found or no access'));
             return;
         }
 
         if (!Csrf::validate($_POST['_csrf'] ?? null)) {
-            Session::flash('error', t('请求无效，请重试'));
+            Session::flash('error', t('Invalid request, try again'));
             Response::redirect(self::base() . '/apps/' . $clientId);
         }
 
@@ -258,7 +258,7 @@ class Controller
         if (!empty($_FILES['icon']['name'])) {
             $icon = IconUpload::store($_FILES['icon']);
             if ($icon === null) {
-                Session::flash('error', t('图标上传失败，请检查文件格式和大小'));
+                Session::flash('error', t('Icon upload failed — check the file format and size'));
                 Response::redirect(self::base() . '/apps/' . $clientId);
             }
         }
@@ -287,7 +287,7 @@ class Controller
             'changes'     => ActivityLog::diff($beforeFields, $afterFields, array_keys($beforeFields)),
         ]);
 
-        Session::flash('success', t('应用信息已更新'));
+        Session::flash('success', t('App updated'));
         Response::redirect(self::base() . '/apps/' . $clientId);
     }
 
@@ -297,21 +297,21 @@ class Controller
         $app = OAuthClients::findForDeveloper($clientId, (int)$developer['id']);
 
         if (!$app) {
-            Response::error(404, t('应用不存在或无权访问'));
+            Response::error(404, t('App not found or no access'));
             return;
         }
         if (!Csrf::validate($_POST['_csrf'] ?? null)) {
-            Session::flash('error', t('请求无效，请重试'));
+            Session::flash('error', t('Invalid request, try again'));
             Response::redirect(self::base() . '/apps/' . $clientId);
         }
         if (($app['client_type'] ?? 'confidential') === 'public') {
-            Session::flash('error', t('公共客户端不使用 Client Secret，无需重置'));
+            Session::flash('error', t('Public clients don\'t use a Client Secret, nothing to reset'));
             Response::redirect(self::base() . '/apps/' . $clientId);
         }
 
         $rate = RateLimiter::check("open_platform_reset:{$developer['id']}", 3, 3600);
         if (!$rate['allowed']) {
-            Session::flash('error', t('重置太频繁，请稍后重试'));
+            Session::flash('error', t('Too many resets, try again later'));
             Response::redirect(self::base() . '/apps/' . $clientId);
         }
 
@@ -328,7 +328,7 @@ class Controller
 
         Session::flash('new_client_id', $clientId);
         Session::flash('new_client_secret', $secret);
-        Session::flash('success', t('密钥已重置，所有活跃 Token 已失效'));
+        Session::flash('success', t('Secret reset — all active Tokens invalidated'));
         Response::redirect(self::base() . '/apps/' . $clientId);
     }
 
@@ -338,11 +338,11 @@ class Controller
         $app = OAuthClients::findForDeveloper($clientId, (int)$developer['id']);
 
         if (!$app) {
-            Response::error(404, t('应用不存在或无权访问'));
+            Response::error(404, t('App not found or no access'));
             return;
         }
         if (!Csrf::validate($_POST['_csrf'] ?? null)) {
-            Session::flash('error', t('请求无效，请重试'));
+            Session::flash('error', t('Invalid request, try again'));
             Response::redirect(self::base() . '/apps/' . $clientId);
         }
 
@@ -357,7 +357,7 @@ class Controller
             'summary'     => '删除应用「' . $app['name'] . '」',
         ]);
 
-        Session::flash('success', t('应用已删除'));
+        Session::flash('success', t('App deleted'));
         Response::redirect(self::base() . '/dashboard');
     }
 
@@ -366,7 +366,7 @@ class Controller
         $developer = $this->requireDeveloper();
 
         $this->view('settings', [
-            'title'     => t('开发者设置'),
+            'title'     => t('Developer settings'),
             'developer' => $developer,
             'error'     => (string)(Session::getFlash('error') ?: ''),
             'success'   => (string)(Session::getFlash('success') ?: ''),
@@ -378,13 +378,13 @@ class Controller
         $developer = $this->requireDeveloper();
 
         if (!Csrf::validate($_POST['_csrf'] ?? null)) {
-            Session::flash('error', t('请求无效，请重试'));
+            Session::flash('error', t('Invalid request, try again'));
             Response::redirect(self::base() . '/settings');
         }
 
         $name = trim((string)($_POST['name'] ?? ''));
         if (mb_strlen($name) < 2 || mb_strlen($name) > 64) {
-            Session::flash('error', t('开发者名称需要 2-64 个字符'));
+            Session::flash('error', t('Developer name needs 2-64 characters'));
             Response::redirect(self::base() . '/settings');
         }
 
@@ -392,7 +392,7 @@ class Controller
         if (!empty($_FILES['icon']['name'])) {
             $newIcon = IconUpload::store($_FILES['icon']);
             if ($newIcon === null) {
-                Session::flash('error', t('图标上传失败，请检查文件格式和大小'));
+                Session::flash('error', t('Icon upload failed — check the file format and size'));
                 Response::redirect(self::base() . '/settings');
             }
             $icon = $newIcon;
@@ -410,7 +410,7 @@ class Controller
             'summary'     => '更新开发者资料',
         ]);
 
-        Session::flash('success', t('开发者资料已更新'));
+        Session::flash('success', t('Developer profile updated'));
         Response::redirect(self::base() . '/settings');
     }
 
@@ -419,7 +419,7 @@ class Controller
         $developer = self::getDeveloper((int)Session::get('user_id'));
 
         if ($developer === null) {
-            Session::flash('error', t('请先注册成为开发者'));
+            Session::flash('error', t('Become a developer first'));
             Response::redirect(self::base());
         }
 

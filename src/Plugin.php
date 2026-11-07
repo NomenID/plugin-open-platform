@@ -24,7 +24,7 @@ class Plugin
         Plugins::route('POST', '/admin/developers/{id}/toggle', [AdminPage::class, 'toggleStatus'], ['admin']);
 
         Nav::add('open-platform', [
-            'label'   => '开放平台',
+            'label'   => 'Open Platform',
             'href'    => $base . '/dashboard',
             'icon'    => 'layers',
             'order'   => 10,

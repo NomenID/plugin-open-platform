@@ -9,7 +9,7 @@
         var text = target.textContent.trim();
         var done = function () {
             var label = button.textContent;
-            button.textContent = button.getAttribute('data-copied-label') || '已复制';
+            button.textContent = button.getAttribute('data-copied-label') || 'Copied';
             window.setTimeout(function () { button.textContent = label; }, 1500);
         };
 

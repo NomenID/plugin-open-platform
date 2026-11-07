@@ -10,11 +10,11 @@
 ?>
 <div class="portal">
     <header class="portal-head">
-        <h1><?= t('我的应用') ?></h1>
+        <h1><?= t('My apps') ?></h1>
         <p class="portal-lede">
             <?= htmlspecialchars((string)$developer['name']) ?>
-            · <?= (int)$totalUsers ?> <?= t('授权用户') ?>
-            · <?= (int)$activeTokens ?> <?= t('活跃 Token') ?>
+            · <?= (int)$totalUsers ?> <?= t('Authorized users') ?>
+            · <?= (int)$activeTokens ?> <?= t('Active Tokens') ?>
         </p>
     </header>
 
@@ -26,23 +26,23 @@
     <?php endif; ?>
 
     <div class="portal-actions" style="margin-top:24px">
-        <a class="btn btn-primary" href="<?= htmlspecialchars($portalBase . '/apps/create') ?>"><?= t('创建应用') ?></a>
-        <a class="btn btn-ghost" href="<?= htmlspecialchars($portalBase . '/settings') ?>"><?= t('开发者设置') ?></a>
-        <a class="btn btn-ghost" href="/dashboard"><?= t('返回个人') ?></a>
+        <a class="btn btn-primary" href="<?= htmlspecialchars($portalBase . '/apps/create') ?>"><?= t('Create app') ?></a>
+        <a class="btn btn-ghost" href="<?= htmlspecialchars($portalBase . '/settings') ?>"><?= t('Developer settings') ?></a>
+        <a class="btn btn-ghost" href="/dashboard"><?= t('Back to account') ?></a>
     </div>
 
     <section class="portal-section">
-        <h2><?= t('应用') ?></h2>
+        <h2><?= t('apps') ?></h2>
         <?php if (!$apps): ?>
-            <p class="portal-muted"><?= t('还没有应用。') ?></p>
+            <p class="portal-muted"><?= t('No apps yet.') ?></p>
         <?php else: ?>
         <table class="portal-table">
             <thead>
                 <tr>
-                    <th><?= t('名称') ?></th>
+                    <th><?= t('Name') ?></th>
                     <th>Client ID</th>
-                    <th><?= t('状态') ?></th>
-                    <th><?= t('创建时间') ?></th>
+                    <th><?= t('Status') ?></th>
+                    <th><?= t('Created') ?></th>
                 </tr>
             </thead>
             <tbody>
@@ -56,9 +56,9 @@
                     <td><code><?= htmlspecialchars((string)$app['client_id']) ?></code></td>
                     <td>
                         <?php if ((int)$app['status'] === 1): ?>
-                            <span class="portal-badge portal-badge--on"><?= t('启用') ?></span>
+                            <span class="portal-badge portal-badge--on"><?= t('Enabled') ?></span>
                         <?php else: ?>
-                            <span class="portal-badge portal-badge--off"><?= t('停用') ?></span>
+                            <span class="portal-badge portal-badge--off"><?= t('Disabled') ?></span>
                         <?php endif; ?>
                     </td>
                     <td><?= htmlspecialchars(substr((string)$app['created_at'], 0, 10)) ?></td>
@@ -67,6 +67,6 @@
             </tbody>
         </table>
         <?php endif; ?>
-        <p class="portal-hint"><?= t('每个开发者最多创建 10 个应用') ?>（<?= count($apps) ?> / <?= (int)$maxApps ?>）</p>
+        <p class="portal-hint"><?= t('Each developer can create up to 10 apps') ?>（<?= count($apps) ?> / <?= (int)$maxApps ?>）</p>
     </section>
 </div>

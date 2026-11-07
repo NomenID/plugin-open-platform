@@ -9,8 +9,8 @@
 ?>
 <div class="portal">
     <header class="portal-head">
-        <h1><?= t('创建应用') ?></h1>
-        <p class="portal-lede"><?= t('回调地址和权限先配好，创建后就能接入。') ?></p>
+        <h1><?= t('Create app') ?></h1>
+        <p class="portal-lede"><?= t('Configure the redirect URI and scopes now; the app can be integrated as soon as it is created.') ?></p>
     </header>
 
     <?php if ($error !== ''): ?>
@@ -21,8 +21,8 @@
         <?= \Nomen\Src\Csrf::field() ?>
         <?php require __DIR__ . '/_fields.php'; ?>
         <div class="portal-actions">
-            <button type="submit" class="btn btn-primary"><?= t('创建应用') ?></button>
-            <a class="btn btn-ghost" href="<?= htmlspecialchars($portalBase . '/dashboard') ?>"><?= t('取消') ?></a>
+            <button type="submit" class="btn btn-primary"><?= t('Create app') ?></button>
+            <a class="btn btn-ghost" href="<?= htmlspecialchars($portalBase . '/dashboard') ?>"><?= t('Cancel') ?></a>
         </div>
     </form>
 </div>
