@@ -67,5 +67,6 @@
     "Too many actions, try again later": "Thao tác quá thường xuyên, vui lòng thử lại sau",
     "Too many resets, try again later": "Đặt lại quá thường xuyên, vui lòng thử lại sau",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "Ứng dụng"
 }

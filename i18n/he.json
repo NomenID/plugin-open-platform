@@ -67,5 +67,6 @@
     "Too many actions, try again later": "יותר מדי פעולות, נסו שוב מאוחר יותר",
     "Too many resets, try again later": "יותר מדי איפוסים, נסו שוב מאוחר יותר",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "אפליקציות"
 }

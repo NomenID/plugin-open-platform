@@ -67,5 +67,6 @@
     "Too many actions, try again later": "बहुत ज़्यादा कार्रवाइयाँ, थोड़ी देर बाद कोशिश करें",
     "Too many resets, try again later": "बहुत ज़्यादा रीसेट, थोड़ी देर बाद कोशिश करें",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "ऐप्स"
 }

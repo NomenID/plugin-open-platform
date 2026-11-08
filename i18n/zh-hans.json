@@ -70,5 +70,6 @@
     "Too many actions, try again later": "操作太频繁，请稍后重试",
     "Too many resets, try again later": "重置太频繁，请稍后重试",
     "URL": "地址",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid 始终包含；授权页只会按这里勾选的权限请求。"
+    "openid is always included. The consent page only requests the scopes checked here.": "openid 始终包含；授权页只会按这里勾选的权限请求。",
+    "apps": "应用"
 }

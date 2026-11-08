@@ -67,5 +67,6 @@
     "Too many actions, try again later": "Ações demais, tente de novo mais tarde",
     "Too many resets, try again later": "Redefinições demais, tente de novo mais tarde",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "Aplicativos"
 }

@@ -67,5 +67,6 @@
     "Too many actions, try again later": "অনেক বেশি বার কাজ করা হয়েছে, একটু পরে আবার চেষ্টা করুন",
     "Too many resets, try again later": "খুব বেশি রিসেট, একটু পরে আবার চেষ্টা করুন",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "অ্যাপ"
 }

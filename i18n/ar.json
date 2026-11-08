@@ -67,5 +67,6 @@
     "Too many actions, try again later": "عمليات كثيرة جدًا، حاول لاحقًا",
     "Too many resets, try again later": "عمليات إعادة تعيين كثيرة جدًا، حاول لاحقًا",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "التطبيقات"
 }

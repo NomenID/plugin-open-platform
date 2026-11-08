@@ -67,5 +67,6 @@
     "Too many actions, try again later": "Çok fazla işlem yaptınız, sonra tekrar deneyin",
     "Too many resets, try again later": "Çok fazla sıfırlama yapıldı, sonra tekrar deneyin",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "Uygulamalar"
 }

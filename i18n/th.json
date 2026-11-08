@@ -67,5 +67,6 @@
     "Too many actions, try again later": "ดำเนินการบ่อยเกินไป โปรดลองใหม่ภายหลัง",
     "Too many resets, try again later": "รีเซ็ตบ่อยเกินไป โปรดลองใหม่ภายหลัง",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "แอป"
 }

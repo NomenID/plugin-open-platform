@@ -67,5 +67,6 @@
     "Too many actions, try again later": "Terlalu sering melakukan operasi, coba lagi nanti",
     "Too many resets, try again later": "Terlalu sering mereset, coba lagi nanti",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "Aplikasi"
 }

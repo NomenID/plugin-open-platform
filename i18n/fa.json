@@ -67,5 +67,6 @@
     "Too many actions, try again later": "عملیات بیش از حد انجام شده است؛ کمی بعد دوباره تلاش کنید",
     "Too many resets, try again later": "بازنشانی بیش از حد انجام شده؛ کمی بعد دوباره تلاش کنید",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "برنامه‌ها"
 }

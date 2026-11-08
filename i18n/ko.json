@@ -67,5 +67,6 @@
     "Too many actions, try again later": "작업이 너무 잦아요. 잠시 후 다시 시도해 주세요",
     "Too many resets, try again later": "재설정이 너무 잦아요. 잠시 후 다시 시도해 주세요",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "앱"
 }

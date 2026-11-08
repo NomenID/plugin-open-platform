@@ -67,5 +67,6 @@
     "Too many actions, try again later": "Zu viele Aktionen, bitte später erneut versuchen",
     "Too many resets, try again later": "Zu viele Zurücksetzungen, bitte später erneut versuchen",
     "URL": "URL",
-    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here."
+    "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
+    "apps": "Apps"
 }
