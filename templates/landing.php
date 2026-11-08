@@ -14,7 +14,7 @@ $docsBase = \Nomen\Src\Plugins::mountUrl('pages');
 <div class="portal">
     <header class="portal-head">
         <h1><?= t('Open Platform') ?></h1>
-        <p class="portal-lede"><?= t('Let people sign in to your app with their Nomen account.') ?> <?= t('OAuth 2.0 authorization code flow with PKCE.') ?></p>
+        <p class="portal-lede"><?= t('Let people sign in to your app with their {:sitename} account.') ?> <?= t('OAuth 2.0 authorization code flow with PKCE.') ?></p>
     </header>
 
     <?php if ($error !== ''): ?>
@@ -61,7 +61,7 @@ $docsBase = \Nomen\Src\Plugins::mountUrl('pages');
         </section>
     <?php else: ?>
         <section class="portal-section">
-            <p><?= t('Sign in or create a Nomen account, then apply as a developer.') ?></p>
+            <p><?= t('Sign in or create a {:sitename} account, then apply as a developer.') ?></p>
             <div class="portal-actions">
                 <a class="btn btn-primary" href="/login?redirect_to=<?= rawurlencode($portalBase) ?>"><?= t('Sign in') ?></a>
                 <a class="btn btn-ghost" href="/register"><?= t('Sign up') ?></a>
