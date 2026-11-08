@@ -4,7 +4,7 @@
     "description": "Developer portal: register developers, self-manage OAuth apps",
     "license": "GPL-3.0-only",
     "author": [
-        "Yunyun"
+        "Yunyun (Wang Yaoze)"
     ],
     "requires": {
         "Nomen": ">=1.0"
@@ -37,5 +37,5 @@
             "order": 35
         }
     },
-    "homepage": "https://github.com/NomenID/plugin-open-platform"
+    "homepage": "https://nomen.caellab.com/w/plugin-open-platform"
 }
