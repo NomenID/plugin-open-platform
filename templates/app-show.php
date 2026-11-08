@@ -1,4 +1,12 @@
 <?php
+/*
+ * Copyright (c) 2025-2026 Yunyun (Wang Yaoze)
+ * Licensed under the GNU General Public License, version 3 or any later
+ * version, with additional attribution terms in the NOTICE file.
+ * Source: https://github.com/NomenID/plugin-open-platform
+ * Project: https://nomen.caellab.com/w/plugin-open-platform
+ */
+
 /** @var string $portalBase */
 /** @var array $app */
 /** @var array $developer */
