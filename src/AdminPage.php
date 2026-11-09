@@ -4,7 +4,7 @@
  * Licensed under the GNU General Public License, version 3 only, with
  * additional attribution terms in the NOTICE file.
  * Source: https://github.com/NomenID/plugin-open-platform
- * Project: https://nomen.caellab.com/w/plugin-open-platform
+ * Project: https://nomenid.org/w/plugin-open-platform
  */
 
 namespace Nomen\Plugin\OpenPlatform;
