@@ -1,8 +1,8 @@
 {
     "name": "Open Platform",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Developer portal: register developers, self-manage OAuth apps",
-    "license": "GPL-3.0-only",
+    "license": "Apache-2.0",
     "author": [
         "Yunyun (Wang Yaoze)"
     ],

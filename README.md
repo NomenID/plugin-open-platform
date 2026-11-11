@@ -2,7 +2,7 @@
 
 开发者门户。用户在 `/open` 注册开发者，然后自助创建、修改和删除自己的 OAuth 应用。
 
-Open Platform 是独立项目，不属于 Nomen 本体，按 GPLv3 单独发布：
+Open Platform 是独立项目，不属于 Nomen 本体，按 Apache-2.0 单独发布：
 <https://github.com/NomenID/plugin-open-platform>。
 
 管理员不需要这个插件也能建应用：管理后台的「应用」页直接调 `OAuthClients`，和插件用的是同一套逻辑。
@@ -65,4 +65,4 @@ Open Platform 是独立项目，不属于 Nomen 本体，按 GPLv3 单独发布�
 
 ## 许可
 
-GPL-3.0-only，见同目录 `LICENSE`。
+Apache-2.0，见同目录 `LICENSE`。
