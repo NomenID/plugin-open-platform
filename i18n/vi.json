@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Đặt lại quá thường xuyên, vui lòng thử lại sau",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Ứng dụng"
+    "apps": "Ứng dụng",
+  "Developer disabled": "Đã tắt nhà phát triển",
+  "Developer enabled": "Đã bật nhà phát triển",
+  "Developer not found": "Không tìm thấy nhà phát triển",
+  "Developers": "Nhà phát triển",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Chưa có nhà phát triển nào. Khi bật trình cắm nền tảng mở, người dùng có thể nộp đơn từ trang.",
+  "Registered": "Ngày đăng ký",
+  "The request could not be verified, try again": "Không xác minh được yêu cầu, hãy thử lại",
+  "{:count} in total": "tổng cộng {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Cổng nhà phát triển: đăng ký nhà phát triển, tự quản lý ứng dụng OAuth"
 }

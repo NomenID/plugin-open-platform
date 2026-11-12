@@ -68,5 +68,14 @@
     "Too many resets, try again later": "יותר מדי איפוסים, נסו שוב מאוחר יותר",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "אפליקציות"
+    "apps": "אפליקציות",
+  "Developer disabled": "המפתח הושבת",
+  "Developer enabled": "המפתח הופעל",
+  "Developer not found": "המפתח לא נמצא",
+  "Developers": "מפתחים",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "אין עדיין מפתחים. ברגע שתוסף הפלטפורמה הפתוחה מופעל, משתמשים יכולים להירשם מהאתר.",
+  "Registered": "תאריך רישום",
+  "The request could not be verified, try again": "לא ניתן לאמת את הבקשה, נסו שוב",
+  "{:count} in total": "סך הכול {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "פורטל מפתחים: רישום מפתחים, ניהול עצמאי של אפליקציות OAuth"
 }

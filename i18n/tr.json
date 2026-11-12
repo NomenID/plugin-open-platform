@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Çok fazla sıfırlama yapıldı, sonra tekrar deneyin",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Uygulamalar"
+    "apps": "Uygulamalar",
+  "Developer disabled": "Geliştirici devre dışı bırakıldı",
+  "Developer enabled": "Geliştirici etkinleştirildi",
+  "Developer not found": "Geliştirici bulunamadı",
+  "Developers": "Geliştiriciler",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Henüz geliştirici yok. Açık platform eklentisi açıldığında kullanıcılar siteden başvurabilir.",
+  "Registered": "Kayıt tarihi",
+  "The request could not be verified, try again": "İstek doğrulanamadı, tekrar deneyin",
+  "{:count} in total": "Toplam: {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Geliştirici portalı: geliştirici kaydı, OAuth uygulamalarını kendi kendine yönetme"
 }

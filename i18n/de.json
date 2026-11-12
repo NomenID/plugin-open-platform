@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Zu viele Zurücksetzungen, bitte später erneut versuchen",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Apps"
+    "apps": "Apps",
+  "Developer disabled": "Entwickler deaktiviert",
+  "Developer enabled": "Entwickler aktiviert",
+  "Developer not found": "Entwickler nicht gefunden",
+  "Developers": "Entwickler",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Noch keine Entwickler. Sobald das Open-Platform-Plugin aktiviert ist, können sich Benutzer über die Website bewerben.",
+  "Registered": "Registriert am",
+  "The request could not be verified, try again": "Die Anfrage konnte nicht verifiziert werden, bitte erneut versuchen",
+  "{:count} in total": "Insgesamt {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Entwicklerportal: Entwickler registrieren, OAuth-Apps selbst verwalten"
 }

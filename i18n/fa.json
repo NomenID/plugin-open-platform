@@ -68,5 +68,14 @@
     "Too many resets, try again later": "بازنشانی بیش از حد انجام شده؛ کمی بعد دوباره تلاش کنید",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "برنامه‌ها"
+    "apps": "برنامه‌ها",
+  "Developer disabled": "توسعه‌دهنده غیرفعال شد",
+  "Developer enabled": "توسعه‌دهنده فعال شد",
+  "Developer not found": "توسعه‌دهنده پیدا نشد",
+  "Developers": "توسعه‌دهندگان",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "هنوز توسعه‌دهنده‌ای نیست. با فعال شدن افزونه سکوی باز، کاربران می‌توانند از سایت ثبت‌نام کنند.",
+  "Registered": "تاریخ ثبت",
+  "The request could not be verified, try again": "درخواست تأیید نشد، دوباره تلاش کنید",
+  "{:count} in total": "مجموعاً {:count} مورد",
+  "Developer portal: register developers, self-manage OAuth apps": "پرتال توسعه‌دهنده: ثبت توسعه‌دهنده، مدیریت خودتانِ برنامه‌های OAuth"
 }

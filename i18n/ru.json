@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Слишком частые сбросы, попробуйте позже",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Приложения"
+    "apps": "Приложения",
+  "Developer disabled": "Разработчик отключён",
+  "Developer enabled": "Разработчик включён",
+  "Developer not found": "Разработчик не найден",
+  "Developers": "Разработчики",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Разработчиков пока нет. Когда плагин открытой платформы будет включён, пользователи смогут подавать заявки с сайта.",
+  "Registered": "Дата регистрации",
+  "The request could not be verified, try again": "Запрос не удалось проверить, попробуйте ещё раз",
+  "{:count} in total": "Всего: {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Портал разработчика: регистрация разработчиков, самостоятельное управление приложениями OAuth"
 }

@@ -68,5 +68,14 @@
     "Too many resets, try again later": "बहुत ज़्यादा रीसेट, थोड़ी देर बाद कोशिश करें",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "ऐप्स"
+    "apps": "ऐप्स",
+  "Developer disabled": "डेवलपर निष्क्रिय किया गया",
+  "Developer enabled": "डेवलपर सक्रिय किया गया",
+  "Developer not found": "डेवलपर नहीं मिला",
+  "Developers": "डेवलपर",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "अभी कोई डेवलपर नहीं। ओपन प्लेटफ़ॉर्म प्लगइन चालू होने पर उपयोगकर्ता साइट से आवेदन कर सकते हैं।",
+  "Registered": "पंजीकरण का समय",
+  "The request could not be verified, try again": "अनुरोध सत्यापित नहीं हो सका, फिर कोशिश करें",
+  "{:count} in total": "कुल {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "डेवलपर पोर्टल: डेवलपर पंजीकरण, OAuth ऐप स्व-प्रबंधन"
 }

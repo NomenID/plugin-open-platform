@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Terlalu kerap menetapkan semula, cuba lagi nanti",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Aplikasi"
+    "apps": "Aplikasi",
+  "Developer disabled": "Pembangun dinyahaktifkan",
+  "Developer enabled": "Pembangun diaktifkan",
+  "Developer not found": "Pembangun tidak dijumpai",
+  "Developers": "Pembangun",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Belum ada pembangun. Sebaik sahaja pemalam platform terbuka diaktifkan, pengguna boleh memohon dari tapak.",
+  "Registered": "Berdaftar pada",
+  "The request could not be verified, try again": "Permintaan tidak dapat disahkan, cuba lagi",
+  "{:count} in total": "jumlah {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Portal pembangun: daftar pembangun, urus apl OAuth secara kendiri"
 }

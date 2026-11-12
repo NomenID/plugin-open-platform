@@ -68,5 +68,14 @@
     "Too many resets, try again later": "عمليات إعادة تعيين كثيرة جدًا، حاول لاحقًا",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "التطبيقات"
+    "apps": "التطبيقات",
+  "Developer disabled": "تم تعطيل المطوّر",
+  "Developer enabled": "تم تفعيل المطوّر",
+  "Developer not found": "المطوّر غير موجود",
+  "Developers": "المطوّرون",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "لا يوجد مطوّرون بعد. بعد تفعيل إضافة المنصة المفتوحة يمكن للمستخدمين التقدم من الموقع.",
+  "Registered": "تاريخ التسجيل",
+  "The request could not be verified, try again": "تعذر التحقق من الطلب، حاول مرة أخرى",
+  "{:count} in total": "المجموع {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "بوابة المطورين: تسجيل المطورين وإدارة تطبيقات OAuth ذاتيًا"
 }

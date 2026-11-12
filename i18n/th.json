@@ -68,5 +68,14 @@
     "Too many resets, try again later": "รีเซ็ตบ่อยเกินไป โปรดลองใหม่ภายหลัง",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "แอป"
+    "apps": "แอป",
+  "Developer disabled": "ปิดใช้งานนักพัฒนาแล้ว",
+  "Developer enabled": "เปิดใช้งานนักพัฒนาแล้ว",
+  "Developer not found": "ไม่พบนักพัฒนา",
+  "Developers": "นักพัฒนา",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "ยังไม่มีนักพัฒนา เมื่อเปิดใช้ปลั๊กอินแพลตฟอร์มเปิด ผู้ใช้จะยื่นสมัครจากไซต์ได้",
+  "Registered": "ลงทะเบียนเมื่อ",
+  "The request could not be verified, try again": "ตรวจสอบคำขอไม่ผ่าน โปรดลองอีกครั้ง",
+  "{:count} in total": "รวม {:count} คน",
+  "Developer portal: register developers, self-manage OAuth apps": "พอร์ทัลนักพัฒนา: ลงทะเบียนนักพัฒนา จัดการแอป OAuth ด้วยตนเอง"
 }

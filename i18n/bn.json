@@ -68,5 +68,14 @@
     "Too many resets, try again later": "খুব বেশি রিসেট, একটু পরে আবার চেষ্টা করুন",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "অ্যাপ"
+    "apps": "অ্যাপ",
+  "Developer disabled": "ডেভেলপার নিষ্ক্রিয় করা হয়েছে",
+  "Developer enabled": "ডেভেলপার সক্রিয় করা হয়েছে",
+  "Developer not found": "ডেভেলপার পাওয়া যায়নি",
+  "Developers": "ডেভেলপার",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "এখনো কোনো ডেভেলপার নেই। ওপেন প্ল্যাটফর্ম প্লাগইন চালু হলে ব্যবহারকারীরা সাইট থেকে আবেদন করতে পারবেন।",
+  "Registered": "নিবন্ধনের সময়",
+  "The request could not be verified, try again": "অনুরোধ যাচাই করা যায়নি, আবার চেষ্টা করুন",
+  "{:count} in total": "মোট {:count}টি",
+  "Developer portal: register developers, self-manage OAuth apps": "ডেভেলপার পোর্টাল: ডেভেলপার নিবন্ধন, OAuth অ্যাপ নিজেই পরিচালনা"
 }

@@ -71,5 +71,13 @@
     "Too many resets, try again later": "重置太频繁，请稍后重试",
     "URL": "地址",
     "openid is always included. The consent page only requests the scopes checked here.": "openid 始终包含；授权页只会按这里勾选的权限请求。",
-    "apps": "应用"
+    "apps": "应用",
+  "Developer disabled": "开发者已停用",
+  "Developer enabled": "开发者已启用",
+  "Developer not found": "开发者不存在",
+  "Developers": "开发者",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "还没有人注册开发者。启用开放平台插件后，用户可以在前台申请。",
+  "Registered": "注册时间",
+  "The request could not be verified, try again": "请求无效，请重试",
+  "{:count} in total": "共 {:count} 个"
 }

@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Занадто часті скидання, спробуйте пізніше",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Застосунки"
+    "apps": "Застосунки",
+  "Developer disabled": "Розробника вимкнено",
+  "Developer enabled": "Розробника увімкнено",
+  "Developer not found": "Розробника не знайдено",
+  "Developers": "Розробники",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Розробників ще немає. Коли плагін відкритої платформи буде увімкнено, користувачі зможуть подавати заявки з сайту.",
+  "Registered": "Дата реєстрації",
+  "The request could not be verified, try again": "Запит не вдалося перевірити, спробуйте ще раз",
+  "{:count} in total": "Усього: {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Портал розробника: реєстрація розробників, самостійне керування застосунками OAuth"
 }

@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Πολλές επαναφορές· δοκιμάστε αργότερα",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Εφαρμογές"
+    "apps": "Εφαρμογές",
+  "Developer disabled": "Ο προγραμματιστής απενεργοποιήθηκε",
+  "Developer enabled": "Ο προγραμματιστής ενεργοποιήθηκε",
+  "Developer not found": "Ο προγραμματιστής δεν βρέθηκε",
+  "Developers": "Προγραμματιστές",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Δεν υπάρχουν προγραμματιστές ακόμη. Όταν το πρόσθετο της ανοιχτής πλατφόρμας ενεργοποιηθεί, οι χρήστες θα μπορούν να υποβάλουν αίτηση από τον ιστότοπο.",
+  "Registered": "Ημερομηνία εγγραφής",
+  "The request could not be verified, try again": "Το αίτημα δεν μπόρεσε να επαληθευτεί, δοκιμάστε ξανά",
+  "{:count} in total": "Σύνολο: {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Πύλη προγραμματιστών: εγγραφή προγραμματιστών, αυτοδιαχείριση εφαρμογών OAuth"
 }

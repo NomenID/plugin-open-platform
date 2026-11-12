@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Te veel resets, probeer het later opnieuw",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Apps"
+    "apps": "Apps",
+  "Developer disabled": "Ontwikkelaar uitgeschakeld",
+  "Developer enabled": "Ontwikkelaar ingeschakeld",
+  "Developer not found": "Ontwikkelaar niet gevonden",
+  "Developers": "Ontwikkelaars",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Nog geen ontwikkelaars. Zodra de Open Platform-plugin aan staat, kunnen gebruikers zich vanaf de site aanmelden.",
+  "Registered": "Geregistreerd op",
+  "The request could not be verified, try again": "Het verzoek kon niet worden geverifieerd, probeer het opnieuw",
+  "{:count} in total": "In totaal {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Ontwikkelaarsportaal: registreer ontwikkelaars, beheer OAuth-apps zelf"
 }

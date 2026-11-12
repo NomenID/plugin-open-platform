@@ -68,5 +68,14 @@
     "Too many resets, try again later": "Za częste resetowanie, spróbuj później",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "Aplikacje"
+    "apps": "Aplikacje",
+  "Developer disabled": "Deweloper wyłączony",
+  "Developer enabled": "Deweloper włączony",
+  "Developer not found": "Nie znaleziono dewelopera",
+  "Developers": "Deweloperzy",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "Brak deweloperów. Gdy wtyczka platformy otwartej będzie włączona, użytkownicy będą mogli aplikować z witryny.",
+  "Registered": "Data rejestracji",
+  "The request could not be verified, try again": "Żądania nie udało się zweryfikować, spróbuj ponownie",
+  "{:count} in total": "Łącznie: {:count}",
+  "Developer portal: register developers, self-manage OAuth apps": "Portal dewelopera: rejestracja deweloperów, samodzielne zarządzanie aplikacjami OAuth"
 }

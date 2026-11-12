@@ -68,5 +68,14 @@
     "Too many resets, try again later": "重設太頻繁，請稍後重試",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "應用"
+    "apps": "應用",
+  "Developer disabled": "開發者已停用",
+  "Developer enabled": "開發者已啟用",
+  "Developer not found": "開發者不存在",
+  "Developers": "開發者",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "還沒有人註冊開發者。啟用開放平臺外掛後，使用者可以在前臺申請。",
+  "Registered": "註冊時間",
+  "The request could not be verified, try again": "請求無效，請重試",
+  "{:count} in total": "共 {:count} 個",
+  "Developer portal: register developers, self-manage OAuth apps": "開發者門戶：註冊開發者，自助管理 OAuth 應用"
 }

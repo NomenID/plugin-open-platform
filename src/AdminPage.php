@@ -25,14 +25,15 @@ class AdminPage
         )->fetchAll();
 
         $html = '<div class="a-card">';
-        $html .= '<div class="a-card__head"><h2>开发者</h2><span class="a-count">共 ' . count($developers) . ' 个</span></div>';
+        $html .= '<div class="a-card__head"><h2>' . t('Developers') . '</h2><span class="a-count">'
+            . t('{:count} in total', ['count' => count($developers)]) . '</span></div>';
         $html .= '<div class="a-card__body' . ($developers ? ' a-card__body--flush' : '') . '">';
 
         if (!$developers) {
-            $html .= '<p class="a-empty">还没有人注册开发者。启用开放平台插件后，用户可以在前台申请。</p>';
+            $html .= '<p class="a-empty">' . t('No developers yet. Once the open platform plugin is on, users can apply from the site.') . '</p>';
         } else {
             $html .= '<div class="a-table-wrap"><table class="a-table"><thead><tr>'
-                . '<th>开发者</th><th>账号</th><th>应用</th><th>状态</th><th>注册时间</th><th class="a-td-actions">操作</th>'
+                . '<th>' . t('Developer') . '</th><th>' . t('Account') . '</th><th>' . t('Apps') . '</th><th>' . t('Status') . '</th><th>' . t('Registered') . '</th><th class="a-td-actions">' . t('Actions') . '</th>'
                 . '</tr></thead><tbody>';
 
             foreach ($developers as $developer) {
@@ -46,14 +47,14 @@ class AdminPage
                     . '<div class="a-sub">' . htmlspecialchars((string)($developer['email'] ?? '')) . '</div></td>'
                     . '<td>' . count($apps) . '</td>'
                     . '<td>' . ($on
-                        ? '<span class="a-badge a-badge--success">正常</span>'
-                        : '<span class="a-badge a-badge--danger">已停用</span>') . '</td>'
+                        ? '<span class="a-badge a-badge--success">' . t('Active') . '</span>'
+                        : '<span class="a-badge a-badge--danger">' . t('Disabled') . '</span>') . '</td>'
                     . '<td class="a-nowrap">' . htmlspecialchars((string)$developer['created_at']) . '</td>'
                     . '<td class="a-td-actions">'
                     . '<form method="POST" action="/admin/developers/' . (int)$developer['id'] . '/toggle" data-admin-ajax>'
                     . Csrf::field()
                     . '<button type="submit" class="a-btn a-btn--sm' . ($on ? ' a-btn--danger' : ' a-btn--ghost') . '">'
-                    . ($on ? '停用' : '启用') . '</button></form></td>'
+                    . ($on ? t('Disable') : t('Enable')) . '</button></form></td>'
                     . '</tr>';
             }
 
@@ -71,7 +72,7 @@ class AdminPage
         $developerId = (int)$id;
 
         if (!Csrf::validate($_POST['_csrf'] ?? null)) {
-            Session::flash('error', '请求无效，请重试');
+            Session::flash('error', t('The request could not be verified, try again'));
             Response::redirect('/admin/developers');
         }
 
@@ -80,7 +81,7 @@ class AdminPage
         $developer = $stmt->fetch();
 
         if (!$developer) {
-            Session::flash('error', '开发者不存在');
+            Session::flash('error', t('Developer not found'));
             Response::redirect('/admin/developers');
         }
 
@@ -97,7 +98,7 @@ class AdminPage
             'summary'     => ($status === 1 ? '启用' : '停用') . '开发者 ' . $developer['name'],
         ]);
 
-        Session::flash('success', $status === 1 ? '开发者已启用' : '开发者已停用');
+        Session::flash('success', $status === 1 ? t('Developer enabled') : t('Developer disabled'));
         Response::redirect('/admin/developers');
     }
 }

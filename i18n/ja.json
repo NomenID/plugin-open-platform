@@ -68,5 +68,14 @@
     "Too many resets, try again later": "リセットが集中しています。しばらくしてからもう一度お試しください",
     "URL": "URL",
     "openid is always included. The consent page only requests the scopes checked here.": "openid is always included. The consent page only requests the scopes checked here.",
-    "apps": "アプリ"
+    "apps": "アプリ",
+  "Developer disabled": "開発者を無効にしました",
+  "Developer enabled": "開発者を有効にしました",
+  "Developer not found": "開発者が見つかりません",
+  "Developers": "開発者",
+  "No developers yet. Once the open platform plugin is on, users can apply from the site.": "開発者はまだいません。オープンプラットフォームプラグインを有効にすると、ユーザーはサイトから申請できます。",
+  "Registered": "登録日時",
+  "The request could not be verified, try again": "リクエストを検証できませんでした。再試行してください",
+  "{:count} in total": "合計 {:count} 件",
+  "Developer portal: register developers, self-manage OAuth apps": "開発者ポータル：開発者登録と OAuth アプリのセルフ管理"
 }
